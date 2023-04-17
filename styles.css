@@ -1,0 +1,150 @@
+.whatsapp-logo {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+  }
+  
+  .zoom:hover {
+      transform: scale(1.1);
+      transition: all 0.4s ease;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+  }
+  
+  .carousel-item img {
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+  }
+  
+  .site-footer {
+    background-color: #1c1d21;
+    color: #fff;
+    padding: 60px 0;
+  }
+  
+  .footer-top {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    height: 60px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-nav li {
+    margin-right: 30px;
+  }
+  
+  .footer-nav li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social li {
+    margin-right: 20px;
+  }
+  
+  .footer-social li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-subscribe input[type=email] { 
+    border: none;
+    background-color: #25262a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    width: 300
+    
+  }
+  
+  .footer-subscribe button[type=submit] {
+    border: none;
+    background-color: #f4b400;
+    color: #1c1d21;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer-subscribe button[type=submit]:hover {
+    background-color: #f5c75b;
+  }
+  
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-bottom li {
+    margin-right: 30px;
+  }
+  
+  .footer-bottom li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  
+  
+  
