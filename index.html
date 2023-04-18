@@ -9,10 +9,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="/imgs/L_indie.png" id="logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -45,8 +47,8 @@
     </div>
   </nav>
       <div class="row">
-        <div class="col-xxl-12">
-          <section id="sect1" class="bg-dark ">
+        <div class="col-xxl-12" id="galery">
+          <section id="sect1" class="bg-dark">
             <a href="/html/blasphemous.html">
               <img src="imgs/blasphemous.png" alt="...">
             </a>
@@ -80,30 +82,36 @@
           </section>
         </div>
       </div>
-      <div class="row">
-        <div class="col bg-warning">
-          <div class="row m-2">
-            <div class="col-1 bg-danger">
-              2
+      <hr class="text-white">
+      <footer>
+      <div class="row align-center" id="socialNetwork">
+        <div class="col bg-dark text-white">
+          <div class="row" id="stores">
+            <div class="col-1 bg-dark text-white">
+              <a href="https://www.epicgames.com/"><img src="/imgs/L_epic.png" id="socialImg"></a>
             </div>
-            <div class="col-10 bg-info">
-              mid
+            <div class="col-10 bg-dark text-white" id="backTop">
+              <a class="text-white" href="#sect1">Back to top</a>
             </div>
-            <div class="col-1 bg-danger">
-              3
+            <div class="col-1 bg-dark text-white">
+              <a href="https://store.steampowered.com/"><img src="/imgs/L_steam.png" id="socialImg"></a>
             </div>
           </div>
-          1
           <div class="row">
-            <div class="col-12 bg-success">
-              all rights reserved
+            <div class="col-12 bg-dark text-white" id="footerText">
+              © 2023 Indie Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
             </div>
-            <div class="col-12 bg-primary">
-              mini navbar
+            <div class="col-12 bg-dark text-white" id="socialNetwork">
+              <a href="https://es-la.facebook.com/"><img src="/imgs/L_facebook.png" alt=""></a>
+              <a href="https://twitter.com/home?lang=es"><img src="/imgs/L_twitter.png" alt=""></a>
+              <a href="https://www.instagram.com/"><img src="/imgs/L_instagram.png" alt=""></a>
+              <a href="https://www.twitch.tv/"><img src="/imgs/L_twitch.png" alt=""></a>
+              <a href="https://www.youtube.com/"><img src="/imgs/L_youtube.png" alt=""></a>
             </div>
           </div>
         </div>
       </div>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
