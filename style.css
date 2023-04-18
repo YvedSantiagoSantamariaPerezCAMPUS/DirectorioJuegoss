@@ -17,11 +17,16 @@ section img{
 
 
 section img:hover{
-    width: 300px;
+    width: 350px;
     opacity: 1;
     filter: contrast(120%);
 }
 
 body{
     background-color: rgb(32, 32, 32);
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
 }
