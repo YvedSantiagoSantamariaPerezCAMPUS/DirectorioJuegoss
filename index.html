@@ -4,56 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-utilities.css">
-    <link rel="stylesheet" href="/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Directorio</title>
   </head>
   <body class="bg-dark">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Directorio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          <img src="/imgs/L_indie.png" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Trailers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Más Juegos
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galería</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="container mb-3">      
+    <div class="container mb-3" id="section1">      
       <div class="row"> 
         <div class="col-6">
           <div class="carousel mb-1 my-5">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img style="width: auto;" src="/imgs/estasi.jpg" class="d-block w-100" alt="...">
+                  <img style="width: auto;" src="/imgs/fnaf.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img style="width: auto;" src="/imgs/carrousel1.jpg" class="d-block w-100" alt="...">
+                  <img style="width: auto;" src="/imgs/silksong.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img style="width: auto;" src="/imgs/carrousel2.jpg" class="d-block w-100" alt="...">
+                  <img style="width: auto;" src="/imgs/forest.png" class="d-block w-100" alt="...">
                 </div>
               </div>
             </div>
@@ -63,32 +69,32 @@
           <div class="row col-12"> 
             <div class="col-4">                        
               <div class="card border-0 bg-transparent" id="cardA">
-                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/outlast.jpg" alt="juego5"></a>
+                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/papers.png" alt="juego5"></a>
               </div>
             </div>
             <div class="col-4">
               <div class="card border-0" id="cardA">
-                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/1366_2000.jpeg" alt="juego5"></a>
+                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/limbo.png" alt="juego5"></a>
               </div>
             </div>
             <div class="col-4 ">
               <div class="card border-0" id="cardA">
-                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/tunic.jpg" alt="juego5"> </a>
+                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/isaac.png" alt="juego5"> </a>
               </div>
             </div>  
             <div class="col-4 gy-3">
               <div class="card border-0" id="cardA">
-                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/darkestdungeon.jpg" alt="juego6"></a> 
+                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/amnesia.png" alt="juego6"></a> 
               </div>
             </div>                 
             <div class="col-4 gy-3">
               <div class="card border-0" id="cardA">
-                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/darkestdungeon.jpg" alt="juego6"></a> 
+                <a href="/suscribirse.html"> <img class="card-img-top zoom" src="/imgs/outlast.png" alt="juego6"></a> 
               </div>
             </div>                 
             <div class="col-4 gy-3">
               <div class="card border-0" id="cardA">
-                <a href="/suscribirse.html"><img class="card-img-top zoom" src="/imgs/darkestdungeon.jpg" alt="juego6"> </a> 
+                <a href="/suscribirse.html"><img class="card-img-top zoom" src="/imgs/hades.png" alt="juego6"> </a> 
               </div>
             </div>                 
           </div>
@@ -102,22 +108,22 @@
       <div class="row gx-2">
         <div class="col-md-3">
           <div class="card border-0" id="cardB">
-            <a href="/suscribirse.html">  <img class="card-img-top zoom" src="/imgs/stray.jpg" alt="juego1"></a>
+            <a href="/suscribirse.html">  <img class="card-img-top zoom" src="/imgs/soma.png" alt="juego1"></a>
           </div>  
         </div>
         <div class="col-md-3">
           <div class="card border-0" id="cardB">
-            <a href="/suscribirse.html">  <img class="card-img-top zoom" src="/imgs/deadcells.jpg" alt="juego2"></a>
+            <a href="/suscribirse.html">  <img class="card-img-top zoom" src="/imgs/inside.png" alt="juego2"></a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card border-0" id="cardB">
-            <a href="/suscribirse.html">  <img class="card-img-top zoom" src="/imgs/oxenfree.jpg" alt="juego3"> </a> 
+            <a href="/suscribirse.html">  <img class="card-img-top zoom" src="/imgs/moon.png" alt="juego3"> </a> 
           </div>
         </div>
         <div class="col-md-3">
           <div class="card border-0" id="cardB">
-            <a href="/suscribirse.html"><img class="card-img-top zoom" src="/imgs/braid.jpg" alt="Card image cap"> </a> 
+            <a href="/suscribirse.html"><img class="card-img-top zoom" src="/imgs/journey.png" alt="Card image cap"> </a> 
           </div>
         </div>
       </div>
@@ -138,55 +144,37 @@
           </div>
         </div>
       </div>
-      <div class="container mb-4 mt-5">
-        <h1 class="text-white">Información Importante </h1>
+      <div class="container mb-4 mt-5 bg-dark">
+        <h1 class="text-white">Preguntas Frecuentes</h1>
           <div class="accordion accordion-flush"  id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  ¿Qué se considera un juego indie?
+                <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  ¿Es Neopulse una tienda de juegos?
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Los videojuegos independientes, popularmente clasificados como Indies, son videojuegos desarrollados por grupos reducidos de individuos o pequeñas empresas.</div>
+              <div id="flush-collapseOne" class="accordion-collapse bg-dark text-white collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">No lo es. Neopulse es una página dedicada a toda la información relacionada a todos los juegos Indie que existen. Nuestro objetivo es ser la wiki más grande de juegos Indie de todas.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  ¿Cuánto cuesta hacer un juego indie?
+                <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  ¿Ya existe una comunidad de la página?
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">El costo del lanzamiento de un videojuego independiente o indie dependerá del tamaño del proyecto. Por lo general, este precio oscila entre 50 mil y 750 mil dólares.</div>
+              <div id="flush-collapseTwo" class="accordion-collapse bg-dark text-white collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Como tal, una sección interactiva entre usuarios, no. Por ahora puedes interactuar con la comunidad a través de nuestras redes sociales. Esperamos que en una próxima actualización podamos añadir un foro solo para nuestra comunidad.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Best Top 5
+                <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  ¿Planean agregar literalmente TODOS los juegos Indie?
                 </button>
               </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"> 
-                  <ul>
-                    <li> Amnesia: The Dark Descent <br>
-                      Desarrollo: Frictional Games
-                      Plataformas: PS4, Xbox One, PC y Switch</li>
-                    <li>Braid <br>
-                      Desarrollo: Number None, Thekla
-                      Plataformas: PS3, Xbox 360 y PC</li>
-                    <li>Cave Story <br>
-                      Desarrollo: Studio Pixel
-                      Plataformas: PC, Switch, Wii, Nintendo DS y Nintendo 3DS</li>
-                    <li>Celeste <br>
-                      Desarrollo: Maddy Makes Games, Extremely OK Games
-                      Plataformas: PS4, Xbox One, PC y Switch</li>
-                    <li>Cuphead <br>
-                      Desarrollo: Studio MDHR
-                      Plataformas: PS4, Xbox One, PC y Switch</li>
-                  </ul>
-                </div>
+              <div id="flush-collapseThree" class="accordion-collapse bg-dark text-white collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Actualmente es nuestro objetivo principal. Queremos dar a conocer todas las obras hechas por desarrolladores independientes para darle la oportunidad a nuestros usuarios de conocer su obra favorita.</div>
               </div>
             </div>
           </div>
@@ -201,17 +189,37 @@
             <P> CONTENIDO DE LA Card</P>
             <BUTTOn> BOTON</BUTTOn>
           </div>
-
-
         </div>
       </div>
-
- 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@2.3.1/dist/model-viewer.min.js"></script>    
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <hr class="text-white">
+      <footer>
+        <div class="row align-center" id="socialNetwork">
+          <div class="col bg-dark text-white">
+            <div class="row" id="stores">
+              <div class="col-1 bg-dark text-white">
+                <a href="https://www.epicgames.com/"><img src="/imgs/L_epic.png" id="socialImg"></a>
+              </div>
+              <div class="col-10 bg-dark text-white" id="backTop">
+                <a class="text-white" href="#sect1">Back to top</a>
+              </div>
+              <div class="col-1 bg-dark text-white">
+                <a href="https://store.steampowered.com/"><img src="/imgs/L_steam.png" id="socialImg"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 bg-dark text-white" id="footerText">
+                © 2023 Indie Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
+              </div>
+              <div class="col-12 bg-dark text-white" id="socialNetwork">
+                <a href="https://es-la.facebook.com/"><img src="/imgs/L_facebook.png" alt=""></a>
+                <a href="https://twitter.com/home?lang=es"><img src="/imgs/L_twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="/imgs/L_instagram.png" alt=""></a>
+                <a href="https://www.twitch.tv/"><img src="/imgs/L_twitch.png" alt=""></a>
+                <a href="https://www.youtube.com/"><img src="/imgs/L_youtube.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
 </html> 
