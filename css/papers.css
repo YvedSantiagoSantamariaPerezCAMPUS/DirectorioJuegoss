@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#hero{
+    min-width: 98%;
+    position: relative;
+
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+#galery {
+    color: aliceblue;
+    
+}
+
+.figure {
+    height: auto;
+    top: 145px;
+    display: grid;
+    position: absolute;
+    left: -30px;
+    
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.fade-in.is-visible {
+    opacity: 1;
+}
+  
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero-section {
+    width: 100%;
+    background: scroll;
+    overflow: hidden;
+    color: aliceblue;
+    display: grid;
+}
+  
+.hero-section img {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+.hero-content {
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+  
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: right;
+}
+  
+.hero-content p {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#imagen-dos {
+    position: absolute;
+    bottom: -480px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+#parrafo {
+    position: absolute;
+    bottom: -20px;
+    display: grid;
+}
+
+#imagen-dos h1 {
+    text-align: left;
+}
+
+#imagen-dos p {
+    text-align: left;
+}
+
+#imagen-dos img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#a{
+    padding: 20%;
+    font-size: larger;
+    color: white;
+    flex-direction: column;
+    padding-top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+    padding: 2rem ;
+}
+
+#blasphemousName{
+    position: absolute;
+    left: 50px;
+    width: 500px;
+}
+
+#blasphemousD{
+    position: absolute;
+    left: 50px;
+    bottom: 25%;
+    font-size: large;
+    text-align: left;
+}
+
+/* Sección de navbar y footer: */
+
+.navbar{
+    height: 95px;
+}
+
+#logo{
+    width: 70px;
+}
+
+.navbar-brand{
+    position: absolute;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-brand {
+      position: static;
+      transform: none;
+      margin: 0 auto;
+      display: table;
+    }
+  }
+  
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+#stores{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footerText{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork img{
+    width: 30px;
+    margin: 20px;
+}
+
+#backTop{
+    display: flex;
+    justify-content: center;
+}
+
+#socialImg{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
