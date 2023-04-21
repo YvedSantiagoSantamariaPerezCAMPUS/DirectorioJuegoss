@@ -1,0 +1,39 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Esto es para un video 16:9 */
+  z-index: -1;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa negra con opacidad */
+}
+
+.texto-sobre-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Color sólido para el texto */
+  text-align: center;
+  z-index: 1;
+}
+
+.cajas-de-texto-imagenes {
+  /* Agrega aquí estilos para tus cajas de texto e imágenes aparte */
+}
