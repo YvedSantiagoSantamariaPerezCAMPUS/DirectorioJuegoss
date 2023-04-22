@@ -1,0 +1,83 @@
+.navbar{
+    height: 95px;
+}
+
+#logo{
+    width: 70px;
+}
+
+.navbar-brand{
+    position: absolute;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-brand {
+      position: static;
+      transform: none;
+      margin: 0 auto;
+      display: table;
+    }
+  }
+  
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+#stores{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footerText{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork img{
+    width: 30px;
+    margin: 20px;
+}
+
+#backTop{
+    display: flex;
+    justify-content: center;
+}
+
+#socialImg{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* galeria */
+
+#titulo{
+    margin-top: 60px;
+}
+
+.col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#galery img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#galery img:hover{
+    transform: scale(0.9);
+}
