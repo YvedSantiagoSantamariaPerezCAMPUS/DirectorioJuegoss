@@ -1,0 +1,98 @@
+.navbar{
+    height: 95px;
+}
+
+#logo{
+    width: 70px;
+}
+
+.navbar-brand{
+    position: absolute;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-brand {
+      position: static;
+      transform: none;
+      margin: 0 auto;
+      display: table;
+    }
+  }
+  
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+#stores{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footerText{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork img{
+    width: 30px;
+    margin: 20px;
+}
+
+#backTop{
+    display: flex;
+    justify-content: center;
+}
+
+#socialImg{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* soundtrack content */
+
+.container{
+    margin-top: 100px;
+}
+
+.card {
+    position: relative;
+}
+  
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-img {
+  transition: filter 1s;
+}
+
+.card:hover .card-img {
+  filter: brightness(30%);
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .card-title, .card:hover .card-text {
+  display: block;
+}
+
+.card-title, .card-text {
+  display: none;
+}
+
+#modalImg{
+    width: 100%;
+}
