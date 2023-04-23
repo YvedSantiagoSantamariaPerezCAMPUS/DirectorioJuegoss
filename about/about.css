@@ -1,0 +1,101 @@
+.navbar{
+    height: 95px;
+}
+
+#logo{
+    width: 70px;
+}
+
+.navbar-brand{
+    position: absolute;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-brand {
+      position: static;
+      transform: none;
+      margin: 0 auto;
+      display: table;
+    }
+  }
+  
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+#stores{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footerText{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#socialNetwork img{
+    width: 30px;
+    margin: 20px;
+}
+
+#backTop{
+    display: flex;
+    justify-content: center;
+}
+
+#socialImg{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about us */
+
+#row1{
+    margin-top: 100px;
+}
+
+.fila1 {
+    background-color: #0c0c0c;
+}
+  
+.fila2 {
+    background-color: #d1d1d1;
+}
+  
+.fila3 {
+    background-color: #0c0c0c;
+}
+  
+#bgg{
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#column1, #column3{
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+#neopulse_logo{
+    width: 500px;
+}
+
+#column2{
+    display: grid;
+    text-align: end;
+    align-content: center;
+}
