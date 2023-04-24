@@ -4,6 +4,10 @@ body{
     font-family: 'Josefin Sans', sans-serif !important;
 }
 
+audio {
+  display: none;
+}
+
 .navbar{
     height: 95px;
 }
